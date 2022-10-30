@@ -16,6 +16,9 @@
 		23D97D51290E5C0300EF9E7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D97D50290E5C0300EF9E7C /* ContentView.swift */; };
 		23D97D53290E5C0400EF9E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23D97D52290E5C0400EF9E7C /* Assets.xcassets */; };
 		23D97D56290E5C0400EF9E7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23D97D55290E5C0400EF9E7C /* Preview Assets.xcassets */; };
+		23D97D63290E5DB500EF9E7C /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D97D62290E5DB500EF9E7C /* RootViewModel.swift */; };
+		23DE06B4290E820C00D637E7 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE06B3290E820C00D637E7 /* RootViewModel.swift */; };
+		23DE06B6290E84F500D637E7 /* WkDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE06B5290E84F500D637E7 /* WkDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,13 @@
 		23D97D50290E5C0300EF9E7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		23D97D52290E5C0400EF9E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23D97D55290E5C0400EF9E7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23D97D60290E5CA600EF9E7C /* watchHeartRatePoc Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "watchHeartRatePoc Watch App.entitlements"; sourceTree = "<group>"; };
+		23D97D61290E5D5400EF9E7C /* watchHeartRatePoc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = watchHeartRatePoc.entitlements; sourceTree = "<group>"; };
+		23D97D62290E5DB500EF9E7C /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		23DE06B2290E761800D637E7 /* watchHeartRatePoc-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "watchHeartRatePoc-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		23DE06B3290E820C00D637E7 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		23DE06B5290E84F500D637E7 /* WkDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WkDelegate.swift; sourceTree = "<group>"; };
+		23DE06B7290E932600D637E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +104,13 @@
 		23D97D3B290E5C0200EF9E7C /* watchHeartRatePoc */ = {
 			isa = PBXGroup;
 			children = (
+				23DE06B7290E932600D637E7 /* Info.plist */,
+				23D97D61290E5D5400EF9E7C /* watchHeartRatePoc.entitlements */,
 				23D97D3C290E5C0200EF9E7C /* watchHeartRatePocApp.swift */,
 				23D97D3E290E5C0200EF9E7C /* ContentView.swift */,
 				23D97D40290E5C0300EF9E7C /* Assets.xcassets */,
 				23D97D42290E5C0300EF9E7C /* Preview Content */,
+				23DE06B3290E820C00D637E7 /* RootViewModel.swift */,
 			);
 			path = watchHeartRatePoc;
 			sourceTree = "<group>";
@@ -113,10 +126,14 @@
 		23D97D4D290E5C0300EF9E7C /* watchHeartRatePoc Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				23DE06B2290E761800D637E7 /* watchHeartRatePoc-Watch-App-Info.plist */,
+				23D97D60290E5CA600EF9E7C /* watchHeartRatePoc Watch App.entitlements */,
 				23D97D4E290E5C0300EF9E7C /* watchHeartRatePocApp.swift */,
 				23D97D50290E5C0300EF9E7C /* ContentView.swift */,
 				23D97D52290E5C0400EF9E7C /* Assets.xcassets */,
 				23D97D54290E5C0400EF9E7C /* Preview Content */,
+				23D97D62290E5DB500EF9E7C /* RootViewModel.swift */,
+				23DE06B5290E84F500D637E7 /* WkDelegate.swift */,
 			);
 			path = "watchHeartRatePoc Watch App";
 			sourceTree = "<group>";
@@ -232,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23D97D3F290E5C0200EF9E7C /* ContentView.swift in Sources */,
+				23DE06B4290E820C00D637E7 /* RootViewModel.swift in Sources */,
 				23D97D3D290E5C0200EF9E7C /* watchHeartRatePocApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,7 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23DE06B6290E84F500D637E7 /* WkDelegate.swift in Sources */,
 				23D97D51290E5C0300EF9E7C /* ContentView.swift in Sources */,
+				23D97D63290E5DB500EF9E7C /* RootViewModel.swift in Sources */,
 				23D97D4F290E5C0300EF9E7C /* watchHeartRatePocApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,13 +390,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "watchHeartRatePoc Watch App/watchHeartRatePoc Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"watchHeartRatePoc Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = S4J9W822QP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "watchHeartRatePoc-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = watchHeartRatePoc;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Hartslag ophalen";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Workout opslaan";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = nl.daanvanberkel.watchHeartRatePoc;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -400,13 +425,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "watchHeartRatePoc Watch App/watchHeartRatePoc Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"watchHeartRatePoc Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = S4J9W822QP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "watchHeartRatePoc-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = watchHeartRatePoc;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Hartslag ophalen";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Workout opslaan";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = nl.daanvanberkel.watchHeartRatePoc;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -432,19 +462,23 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = watchHeartRatePoc/watchHeartRatePoc.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"watchHeartRatePoc/Preview Content\"";
 				DEVELOPMENT_TEAM = S4J9W822QP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = watchHeartRatePoc/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = watchHeartRatePoc;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Hartslag ophalen";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Workout opslaan";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,9 +487,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nl.daanvanberkel.watchHeartRatePoc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,19 +502,23 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = watchHeartRatePoc/watchHeartRatePoc.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"watchHeartRatePoc/Preview Content\"";
 				DEVELOPMENT_TEAM = S4J9W822QP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = watchHeartRatePoc/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = watchHeartRatePoc;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Hartslag ophalen";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Workout opslaan";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -486,9 +527,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nl.daanvanberkel.watchHeartRatePoc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

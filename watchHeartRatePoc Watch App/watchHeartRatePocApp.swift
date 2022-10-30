@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import WatchKit
 
 @main
 struct watchHeartRatePoc_Watch_AppApp: App {
+    let rootViewModel = RootViewModel.shared
+    
+    @WKApplicationDelegateAdaptor(WkDelegate.self) var applicationDelegate
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: rootViewModel)
         }
     }
 }

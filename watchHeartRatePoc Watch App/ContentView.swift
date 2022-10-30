@@ -8,19 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel: RootViewModel
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            if viewModel.workoutStarted {
+                Text("Workout started")
+            } else {
+                Text("Start workout in the iPhone app")
+            }
+            
+            if let heartRate = viewModel.heartRate {
+                Text("Heart rate: \(String(format: "%.1f", heartRate)) bpm")
+            }
         }
         .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
